@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Portugol - Um primeiro contato com Linguagem de Programação</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body id="topo" class="p-5">
+    <div class="container bg-white p-0">
+
+        <header class="h4 p-3 mb-0 text-light">Portugol - Um primeiro contato com Linguagem de Programação</header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="img/capa.jpg" data-fancybox="nav-gallery" data-caption="Capa do projeto">
+                <img src="img/capa.jpg" alt="Portugol - Um primeiro contato com Linguagem de Programação"
+                    class="img img-fluid rounded-circle">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active ancora" href="#topo"><b>Home</b></a>
+                    <a class="nav-item nav-link ancora" href="#sobre">Sobre</a>
+                    <a class="nav-item nav-link ancora" href="#conceitos">Conceitos</a>
+                    <a class="nav-item nav-link ancora" href="#aulas">Aulas</a>
+                    <a class="nav-item nav-link ancora" href="#downloads">Downloads</a>
+                </div>
+            </div>
+        </nav>
+
+        <article class="p-5">
+            <section id="sobre">
+                <h1 class="h4">Sobre o projeto</h1>
+                <p>
+                    Este projeto de cunho social apresenta a proposta de um conjunto de oito aulas que visam
+                    reforçar os conhecimentos básicos de programação e oferecer aos alunos
+                    um primeiro contato com uma linguagem de programação estruturada. A
+                    ideia do projeto surgiu a partir da oportunidade de aprimorar os
+                    conhecimentos de crianças que já haviam realizado o curso <a
+                        href="https://liag.ft.unicamp.br/computacaocriativa/era-uma-vez/" class="link"
+                        target="_blank">Era Uma Vez</a>
+                    e, com ele, tido um contato inicial com os conceitos de programação em
+                    blocos.
+                </p>
+            </section>
+
+            <div class="mb-5">
+                <a href="#topo" class="link ancora d-block text-right"><i class="fas fa-angle-up text-dark"></i> Voltar
+                    ao topo</a>
+                <hr />
+            </div>
+
+            <section id="conceitos">
+                <div id="introducao">
+                    <h1 class="h4">Introdução</h1>
+                    <p>
+                        No fundo, tudo o que um computador faz é obedecer comandos. Portanto,
+                        caso tenhamos um problema e quisermos que o computador nos ajude, basta
+                        criarmos uma solução em forma de um conjunto de comandos e pedir para o
+                        computador executá-los. Essa solução do problema (conjunto de comandos), é
+                        denominada <strong>Algoritmo</strong>.
+                    </p>
+                    <p>
+                        Então, se tudo o que o computador faz é obedecer comandos, e um
+                        algoritmo é um conjunto de comandos que solucionam o meu problema, basta eu
+                        colocar meu algoritmo no computador que ele vai entender, certo?
+                    </p>
+                    <p>
+                        Errado!
+                    </p>
+                    <p>
+                        Pense comigo: você entende e fala a língua portuguesa. Logo, se eu lhe
+                        falar algo em português, você vai entender.
+                    </p>
+                    <p>
+                        Agora imagine que você nunca tenha estudado chinês. Se alguém lhe
+                        pedir em chinês para fazer algo, você não vai entender nada, correto?
+                    </p>
+                    <p>
+                        O mesmo ocorre com o computador, para que ele possa executar nosso
+                        algoritmo, precisamos traduzir nossos comandos para uma linguagem que ele
+                        entenda. É aí que entram as <strong>Linguagens de Programação</strong>: assim como usamos
+                        as palavras da língua portuguesa para nos comunicar, precisamos utilizar os
+                        comandos de uma linguagem de programação para que o computador nos
+                        entenda.
+                    </p>
+                    <p>
+                        A maior parte das linguagens de programação são escritas em inglês, e
+                        por isso neste projeto utilizaremos o <strong>Portugol</strong>: ela é uma linguagem cujos
+                        comandos foram traduzidos em português e, portanto, é mais fácil de ser
+                        compreendida pelas crianças.
+
+                    </p>
+                </div>
+
+                <div id="ide" class="mt-5">
+                    <h1 class="h4">Ambiente de Desenvolvimento (IDE)</h1>
+                    <p>
+                        Agora que já entendemos um pouco sobre como o computador funciona
+                        e que nossos programas serão escritos em <i>Portugol</i>, precisamos definir nosso
+                        <strong>Ambiente de Desenvolvimento</strong> (<i>Integrated Development Environment</i>), ou
+                        seja, o software que vamos utilizar para
+                        escrever nossos programas.
+                    </p>
+                    <p>
+                        Neste projeto, utilizaremos o <strong>VisualG</strong>, um software
+                        gratuito para desenvolvimento em <i>Portugol</i>.
+                    </p>
+                </div>
+
+                <div id="visualg" class="mt-5">
+                    <h1 class="h4">VisualG</h1>
+                    <p>
+                        Apesar do <i>VisualG</i> ser uma aplicação Desktop, exigindo <a
+                            href="http://visualg3.com.br/baixar-o-visualg3-0/" class="link" target="_blank">download</a>
+                        de alguns arquivos, ele não precisará ser instalado nos computadores para ser utilizado.
+                    </p>
+                    <p>
+                        Após ter realizado o download, siga os passos abaixo:
+                    </p>
+                    <ol>
+                        <li>
+                            Extraia o arquivo (é necessário algum programa instalado no computador
+                            para extrair, como: <a href="https://www.winrarbrasil.com.br/winrar/download.mv"
+                                class="link" target="_blank">WinRAR</a> ou <a href="https://www.7-zip.org/" class="link"
+                                target="_blank">7-Zip</a>);
+                        </li>
+                        <li>
+                            Abra o arquivo executável (duplo clique no arquivo <i>visualg30.exe</i>).
+                        </li>
+                    </ol>
+                    <p>
+                        Feito isso, a seguinte tela será aberta:
+                    </p>
+                    <a href="img/visualg_01.jpg" data-fancybox="viusalg-gallery" data-caption="Interface do VisualG">
+                        <img src="img/visualg_01.jpg" alt="" class="img img-fluid rounded galeria">
+                    </a>
+                    <p>
+                        Essa é a interface do VisualG, onde tudo será feito. É possível mudar as
+                        cores da interface, assim cada aluno pode escolher o tema que preferir.
+                    </p>
+                    <p>
+                        A alteração de temas pode ser feita através da opção <i>Peles</i> encontrada em: <i>Manutenção >
+                            Configurações</i>.
+                    </p>
+                    <h2 class="h5">• Área dos algoritmos</h2>
+                    <p>
+                        É nesta área que escrevemos todo o algoritmo no decorrer das aulas, ela
+                        se parece como a imagem abaixo:
+                    </p>
+                    <a href="img/visualg_02.jpg" data-fancybox="viusalg-gallery" data-caption="Área dos algoritmos">
+                        <img src="img/visualg_02.jpg" alt="" class="img img-fluid rounded galeria">
+                    </a>
+                    <h2 class="h5">• Executar</h2>
+                    <p>
+                        Para executar o algoritmo que está sendo feito é só acessar <i>Run
+                            (executar)</i> no menu superior e então clicar em <i>Rodar o
+                            Algoritmo</i>, ou usar o atalho <i>F9</i> (tecla do teclado).
+                    </p>
+                    <a href="img/visualg_03.jpg" data-fancybox="viusalg-gallery"
+                        data-caption="Menu para executar algoritmo">
+                        <img src="img/visualg_03.jpg" alt="" class="img img-fluid rounded galeria">
+                    </a>
+                    <a href="img/visualg_04.jpg" data-fancybox="viusalg-gallery"
+                        data-caption="Exemplo da tela que aparecerá na execução após o término da primeira aula">
+                        <img src="img/visualg_04.jpg" alt="" class="img img-fluid rounded galeria">
+                    </a>
+                </div>
+            </section>
+
+            <div class="mb-5">
+                <a href="#topo" class="link ancora d-block text-right"><i class="fas fa-angle-up text-dark"></i> Voltar
+                    ao topo</a>
+                <hr />
+            </div>
+
+            <section id="aulas">
+                <h1 class="h4">Plano de aulas</h1>
+                <p>
+                    Com este projeto, o grupo propõe ensinar <i>Portugol</i>, uma linguagem de
+                    programação estruturada, para alunos que já realizaram o curso <a
+                        href="https://liag.ft.unicamp.br/computacaocriativa/era-uma-vez/" class="link"
+                        target="_blank">Era Uma Vez</a>.
+                    Neste projeto, os alunos terão a oportunidade de relembrar e aperfeiçoar os
+                    conceitos adquiridos anteriormente, aplicando-os em um projeto que visa a
+                    criação de uma calculadora que possibilite efetuar as operações básicas e
+                    consultar a tabuada de um dado número.
+                </p>
+                <p>
+                    As aulas são divididas em duas atividades principais: apresentação da
+                    teoria de algum conceito de <i>Portugol</i> e desenvolvimento prático aplicando o
+                    conceito no projeto, sendo que é válido encaixar outras atividades entre elas
+                    para melhor compreensão e interesse dos alunos. Abaixo são apresentadas as
+                    atividades contidas em cada aula, e todo o material pode ser acessado na sessão de <a
+                        href="#downloads" class="link ancora">downloads</a>.
+                </p>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link link collapsed w-100 text-left d-block d-md-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="false" aria-controls="collapseOne">
+                                    Aula 1
+                                </button>
+                                <button class="btn btn-link link collapsed w-100 text-left d-none d-md-block"
+                                    type="button" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="false" aria-controls="collapseOne">
+                                    Aula 1 - Apresentação e Introdução
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    <span>Apresentação do grupo e universidade:</span> Cada membro informa seu nome
+                                    e depois são passadas as seguintes informações sobre a Unicamp: O que
+                                    é, se é de graça e se está presente em Limeira.
+                                </p>
+                                <p>
+                                    <span>Apresentação dos alunos:</span> Cada aluno informa seu nome, idade, o que
+                                    deseja ser quando adulto e se já participou de algum projeto de
+                                    programação.
+                                </p>
+                                <p>
+                                    <span>Conceito de algoritmo:</span> Pergunta-se às crianças o que elas acham que é
+                                    um algoritmo, e é passada a seguinte definição: um conjunto de
+                                    etapas/instruções que descrevem como realizar uma tarefa.
+                                </p>
+                                <p>
+                                    <span>Atividade individual:</span> Os alunos escrevem individualmente o algoritmo da
+                                    troca de lâmpada, e a tarefa é recolhida para comprovar presença da
+                                    turma.
+                                </p>
+                                <p>
+                                    <span>Dinâmica em grupo:</span> A sala é dividida em 4 grupos e é feita a seguinte
+                                    dinâmica: Primeiramente, dois grupos voluntários discutem e fazem um
+                                    algoritmo para <span>(1)</span> cortar uma bisnaguinha na horizontal,
+                                    <span>(2)</span> passar geleia
+                                    em uma das metades, <span>(3)</span> passar margarina em outra e <span>(4)</span>
+                                    juntar as
+                                    metades. Depois de ver os primeiros exemplos, os demais grupos realizam
+                                    a mesma tarefa buscando melhorar o algoritmo.
+                                </p>
+                                <p>
+                                    <span>Objetivo do projeto:</span> Por último, os membros apresentam à turma o
+                                    objetivo do projeto: Um programa que serve para realizar as operações
+                                    básicas e calcular a tabuada de um número.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link link collapsed w-100 text-left d-block d-md-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Aula 2
+                                </button>
+                                <button class="btn btn-link link collapsed w-100 text-left d-none d-md-block"
+                                    type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Aula 2 - Conhecendo a IDE e Comandos de saída
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    <span>Apresentação do projeto final:</span> Os monitores mostram o projeto final
+                                    sendo executado no prompt de comando.
+                                </p>
+                                <p>
+                                    <span>O que é IDE?:</span> Os monitores apresentam o VisualG para os alunos e os
+                                    ensinam a alterar o estilo (visual) da ferramenta, ver dicas, criar
+                                    comentários e algumas funcionalidades básicas da ferramenta (salvar,
+                                    executar, etc).
+                                </p>
+                                <p>
+                                    <span>Comandos de Saída:</span> Aqui, os alunos aprendem o que são periféricos de
+                                    entrada/saída e seus primeiros comandos de Portugol: <i>escreva( )</i> e
+                                    <i>escreval( )</i>.
+                                </p>
+                                <p>
+                                    <span>Atividade 2:</span> Os alunos respondem as questões da Atividade 2.
+                                </p>
+                                <p>
+                                    <span>Prática - Construção do Menu:</span> Os alunos utilizam os comandos de saída
+                                    de dados para criar o menu com as opções que o projeto terá, parecido
+                                    com o menu abaixo:
+                                </p>
+                                <code>
+                                    == Menu ==<br>
+                                    1. Calculadora<br>
+                                    2. Tabuada<br>
+                                    0. Sair<br>
+                                    ==========<br>
+                                    Escolha uma opção do menu:
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link link collapsed w-100 text-left d-block d-md-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    Aula 3
+                                </button>
+                                <button class="btn btn-link link collapsed w-100 text-left d-none d-md-block"
+                                    type="button" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    Aula 3 - Variáves e Comandos de entrada
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><span>Variáveis:</span> Os monitores apresentam o conceito de variáveis para as
+                                    crianças.</p>
+                                <p><span>Revisão:</span> É feita uma revisão sobre o que é um comando e é relembrado o
+                                    comando <i>escreva( )</i> e <i>escreval( )</i>.</p>
+                                <p><span>Comando de Entrada:</span> Os alunos aprendem o comando de entrada de
+                                    dados do Portugol: <i>leia(variavel)</i>.</p>
+                                <p><span>Prática - Leitura do Menu:</span> Os alunos aplicam os conceitos de variáveis e
+                                    o
+                                    comando <i>leia( )</i> para ler a opção escolhida do menu do projeto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link link collapsed w-100 text-left d-block d-md-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseFour"
+                                    aria-expanded="false" aria-controls="collapseFour">
+                                    Aula 4
+                                </button>
+                                <button class="btn btn-link link collapsed w-100 text-left d-none d-md-block"
+                                    type="button" data-toggle="collapse" data-target="#collapseFour"
+                                    aria-expanded="false" aria-controls="collapseFour">
+                                    Aula 4 - Desvio condicional
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><span>Dinâmica ESCOLHA-CASO</span> Deve-se dividir a folha sulfite em pedaços
+                                    pequenos e preenchê-los com números de 1 a 4 (que representarão
+                                    grupos), de modo distribuído. Cada aluno irá retirar um papel de dentro de
+                                    um saco e, com base no seu número e nas instruções descritas na
+                                    atividade Dinâmica ESCOLHA-CASO, verificar em qual grupo pertence e se
+                                    juntar a ele.
+                                </p>
+                                <p><span>Revisão de Algoritmo:</span> É feita uma revisão sobre algoritmos, que são um
+                                    conjunto de instruções executadas linearmente.</p>
+                                <p><span>Desvios Condicionais:</span> Aqui, deve-se apresentar a ideia de fazer um
+                                    desvio
+                                    no fluxo linear de um algoritmo, para que este possa escolher e executar
+                                    somente as instruções que lhe interessa</p>
+                                <p><span>Comando de Desvio:</span> Os alunos aprendem os comandos <i>Escolha( ) Caso</i>
+                                    do Portugol.</p>
+                                <p><span>Prática - Decisão:</span> Os alunos aplicam os conceitos aprendidos no projeto,
+                                    restringindo as diferentes instruções que serão executadas dependendo
+                                    da funcionalidade escolhida pelo usuário.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link link collapsed w-100 text-left d-block d-md-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseFive"
+                                    aria-expanded="false" aria-controls="collapseFive">
+                                    Aula 5
+                                </button>
+                                <button class="btn btn-link link collapsed w-100 text-left d-none d-md-block"
+                                    type="button" data-toggle="collapse" data-target="#collapseFive"
+                                    aria-expanded="false" aria-controls="collapseFive">
+                                    Aula 5 - Procedimentos
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><span>Comando <i>limpatela( )</i>:</span> Os alunos aprendem mais um comando da
+                                    linguagem Portugol: <i>limpatela( )</i>. Este comando apaga as informações que
+                                    haviam sido exibidas no console até o momento da sua chamada.</p>
+                                <p><span>Procedimentos:</span> Os alunos aprendem o conceito de procedimentos.</p>
+                                <p><span>Prática - Procedimentos:</span> Nesta etapa, os alunos aplicam o conceito de
+                                    procedimentos para modularizar o projeto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link link collapsed w-100 text-left d-block d-md-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseSix"
+                                    aria-expanded="false" aria-controls="collapseSix">
+                                    Aula 6
+                                </button>
+                                <button class="btn btn-link link collapsed w-100 text-left d-none d-md-block"
+                                    type="button" data-toggle="collapse" data-target="#collapseSix"
+                                    aria-expanded="false" aria-controls="collapseSix">
+                                    Aula 6 - Operadores
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><span>Revisão:</span> Os monitores relembram a estrutura dos algoritmos e
+                                    procedimentos (nome, variáveis, início e fim dos comandos), chamando
+                                    dois voluntários para tentar explicar o que lembram das aulas anteriores.
+                                </p>
+                                <p><span>Operadores:</span> São ensinados os símbolos utilizados para efetuar as quatro
+                                    operações básicas na linguagem Portugol (+, -, *, /).</p>
+                                <p><span>Prática - Procedimentos da calculadora:</span> Os alunos devem criar um
+                                    procedimento para cada operação e incluir suas chamadas nos casos
+                                    faltantes do procedimento calculadora. Os monitores devem ajudar os
+                                    alunos a alterarem o código utilizando os comandos de copiar (ctrl+c) e
+                                    colar (ctrl+v).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link link collapsed w-100 text-left d-block d-md-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseSeven"
+                                    aria-expanded="false" aria-controls="collapseSeven">
+                                    Aula 7
+                                </button>
+                                <button class="btn btn-link link collapsed w-100 text-left d-none d-md-block"
+                                    type="button" data-toggle="collapse" data-target="#collapseSeven"
+                                    aria-expanded="false" aria-controls="collapseSeven">
+                                    Aula 7 - Comando de repetição
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><span>Motivação:</span> Os monitores explicam a motivação para utilizar comandos de
+                                    repetição: evitar reescrever várias vezes um mesmo bloco de código onde
+                                    só um número varia.
+                                </p>
+                                <p><span>Comando <i>PARA</i>:</span> Os monitores explicam o funcionamento do comando de
+                                    repetição <i>PARA</i>.</p>
+                                <p><span>Prática - Procedimento da tabuada:</span> Os alunos criam o procedimento da
+                                    tabuada, utilizando o comando <i>PARA</i> na construção do código e, assim,
+                                    finalizando o projeto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingEight">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link link collapsed w-100 text-left d-block d-md-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseEight"
+                                    aria-expanded="false" aria-controls="collapseEight">
+                                    Aula 8
+                                </button>
+                                <button class="btn btn-link link collapsed w-100 text-left d-none d-md-block"
+                                    type="button" data-toggle="collapse" data-target="#collapseEight"
+                                    aria-expanded="false" aria-controls="collapseEight">
+                                    Aula 8 - Quiz de encerramento
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><span>Criação dos grupos:</span> Os alunos se dividem para jogar um Quiz na
+                                    plataforma <a href="https://kahoot.com/" target="_blank" class="link">Kahoot</a> em
+                                    grupos.
+                                </p>
+                                <p><span>Execução do quiz:</span> Os alunos jogam o quiz <a
+                                    href="https://create.kahoot.it/details/317298ce-0553-4b9f-9933-79b2ceb1070c"
+                                    target="_blank" class="link">Portugol - Um primeiro contato com Linguagem de
+                                    Programação*</a>.</p>
+                                <p><span>Encerramento do Projeto:</span> Os monitores dão seus pareceres finais sobre o
+                                projeto e se despedem dos alunos.
+                                </p>
+                                <p class="mt-5"><span>*</span>Caso deseje modificar o quiz, basta criar uma conta na plataforma,
+                                    acessar o link e clicar em duplicar, como mostrado abaixo:</p>                                
+                                <a href="img/quiz.jpeg" data-fancybox="classes-gallery"
+                                    data-caption="Opção para duplicar e modificar quiz">
+                                    <img src="img/quiz.jpeg" alt="" class="img img-fluid rounded galeria">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="mt-5 mb-5">
+                <a href="#topo" class="link ancora d-block text-right"><i class="fas fa-angle-up text-dark"></i> Voltar
+                    ao topo</a>
+                <hr />
+            </div>
+
+            <section id="downloads">
+                <h1 class="h4">Downloads</h1>
+                <p>
+                    Se interessou pelos conceitos apresentados? Sinta-se livre para baixar e
+                    divulgar o material abaixo para que ele possa ser aplicado a mais turmas!
+                </p>
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                        <ul>
+                            <li><a href="https://drive.google.com/file/d/1NetKx_7hrHNvNkKSTOiaXriKMAQs-p3L/view"
+                                    class="link" target="_blank">Aula 1</a></li>
+                            <li><a href="https://drive.google.com/file/d/1v0cy-_ZhayaF4Vgxf9eqPgMUrzaGaXHK/view"
+                                    class="link" target="_blank">Aula 2</a></li>
+                            <li><a href="https://drive.google.com/file/d/18kZqWzD6MCq6xW1eZvsjoAW4TROnFM_f/view"
+                                    class="link" target="_blank">Aula 3</a></li>
+                            <li><a href="https://drive.google.com/file/d/1Ap3AmAnzbiabwWFrrxVpPfxnn1ewVBlO/view"
+                                    class="link" target="_blank">Aula 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <ul>
+                            <li><a href="https://drive.google.com/file/d/1xN1lTJYrypGkAVR1qNCcolzC1wXe6ZQG/view"
+                                    class="link" target="_blank">Aula 5</a></li>
+                            <li><a href="https://drive.google.com/file/d/1XRNRk4gjrILMjOyelek5zEJuB1QbBhsH/view"
+                                    class="link" target="_blank">Aula 6</a></li>
+                            <li><a href="https://drive.google.com/file/d/1cvxrUUjEgs1ZxV1LsR8ltgwiGdG25MJQ/view"
+                                    class="link" target="_blank">Aula 7</a></li>
+                            <li><a href="https://drive.google.com/file/d/1hUChOONtpM85tfoYuvfv1xHA-26JRyqK/view"
+                                    class="link" target="_blank">Aula 8</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p>
+                    Por fim, também disponibilizamos o <a
+                        href="https://docs.google.com/document/d/1Wxa3-PYNCJlki6PgppVFWJ9AfQLXB6RwlAaMtCSy04Y/edit"
+                        target="_blank" class="link">código do projeto</a> em <i>Portugol</i> para download.
+                </p>
+            </section>
+
+            <a href="#topo" class="link ancora d-block text-right"><i class="fas fa-angle-up text-dark"></i> Voltar ao
+                topo</a>
+        </article>
+
+        <footer class="pt-3 pl-5 pr-5 pb-3 bg-light">
+            <div class="row text-muted small text-center">
+                <div class="col-md-4 text-md-left">Gestão de Projetos</div>
+                <div class="col-md-4">1º semestre de 2019</div>
+                <div class="col-md-4 text-md-right"><a href="https://www.ft.unicamp.br/" class="link-padrao" target="_blank">Faculdade de Tecnologia da <strong>UNICAMP</strong></a></div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://kit.fontawesome.com/c84e056c36.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>
+        var $doc = $('html, body');
+        $('.ancora').click(function () {
+            $doc.animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+            return false;
+        });
+    </script>
+</body>
+
+</html>

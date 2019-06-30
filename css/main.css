@@ -1,0 +1,40 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    text-align: justify;
+}
+header {
+    background-color: #891f8e;
+    text-align: center;
+}
+.navbar-brand img {
+    height: 150px;
+    width: 150px;
+}
+.nav-item {            
+    color: #891f8e!important;
+    text-align: center;
+}
+.nav-item:hover {         
+    text-decoration: underline;
+}
+.link, .link:hover, .link:active, .link:focus {
+    color: #891f8e;
+    font-weight: bold;
+}
+.galeria {
+    max-height: 150px;
+    border: 3px solid #ccc;
+    padding: 3px;
+    margin-bottom: 1rem;
+}
+span {
+    font-weight: bold;
+}
+code {
+    font-family: monospace;
+}
+.link-padrao, .link-padrao:hover, .link-padrao:focus, .link-padrao:active {
+    color: inherit;
+}
